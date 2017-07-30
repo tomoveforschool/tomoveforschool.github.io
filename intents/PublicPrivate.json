@@ -1,0 +1,151 @@
+{
+  "userSays": [
+    {
+      "id": "6e510c0d-1dc6-4f79-bdf2-28e929d15e04",
+      "data": [
+        {
+          "text": "Public",
+          "alias": "PublicPrivate",
+          "meta": "@PublicPrivate",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c91a42ee-4215-435d-a39c-a0e24211f443",
+      "data": [
+        {
+          "text": "A "
+        },
+        {
+          "text": "public",
+          "alias": "PublicPrivate",
+          "meta": "@PublicPrivate",
+          "userDefined": true
+        },
+        {
+          "text": " school."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9948310a-f68b-46ca-be9d-49b34f15fc8d",
+      "data": [
+        {
+          "text": "I want a "
+        },
+        {
+          "text": "public",
+          "alias": "PublicPrivate",
+          "meta": "@PublicPrivate",
+          "userDefined": true
+        },
+        {
+          "text": " school."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "390f0f52-351d-4fdb-ade9-f972b9b1852f",
+      "data": [
+        {
+          "text": "Private",
+          "alias": "PublicPrivate",
+          "meta": "@PublicPrivate",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3eb417f8-2bfe-464e-b901-d1de60f0d452",
+      "data": [
+        {
+          "text": "A "
+        },
+        {
+          "text": "private",
+          "alias": "PublicPrivate",
+          "meta": "@PublicPrivate",
+          "userDefined": true
+        },
+        {
+          "text": " school."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e707e0f2-3b5d-4a8a-8ce4-d4bf3bd53809",
+      "data": [
+        {
+          "text": "I want a "
+        },
+        {
+          "text": "private",
+          "alias": "PublicPrivate",
+          "meta": "@PublicPrivate",
+          "userDefined": true
+        },
+        {
+          "text": " school."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "e822da1b-4170-4808-b1b9-c7a567d0c7b4",
+  "parentId": "2074db4b-f66e-45e4-9943-4034620a7460",
+  "rootParentId": "da410d4f-dab7-4c4f-a15f-a1b8349cbf82",
+  "name": "PublicPrivate",
+  "auto": true,
+  "contexts": [
+    "Location-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "School.School-custom.Location-custom",
+      "affectedContexts": [
+        {
+          "name": "PublicPrivate-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@PublicPrivate",
+          "name": "PublicPrivate",
+          "value": "$PublicPrivate",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "What do you value most in a school (for example quality of students, academics, facilities, proximity)?"
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "d077c9ea-85c7-4f41-956c-20807798cd99",
+  "name": "Look",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "academic",
+      "synonyms": [
+        "academic",
+        "educational"
+      ]
+    },
+    {
+      "value": "proximity",
+      "synonyms": [
+        "proximity",
+        "close",
+        "near"
+      ]
+    },
+    {
+      "value": "science",
+      "synonyms": [
+        "science"
+      ]
+    },
+    {
+      "value": "english",
+      "synonyms": [
+        "english"
+      ]
+    },
+    {
+      "value": "sports",
+      "synonyms": [
+        "sports"
+      ]
+    },
+    {
+      "value": "maths",
+      "synonyms": [
+        "maths"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

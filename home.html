@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Snap Ranger</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    /*    html,
+    body {
+        height: 370px;
+        padding: 0;
+        margin: 0;
+    }
+*/
+
+    #map {
+        height: 80%;
+        overflow: hidden;
+        float: left;
+        border: thin solid #333;
+        margin: auto;
+        width: 100%;
+        border: 3px solid green;
+        padding: 10px;
+    }
+
+    #capture {
+        height: 360px;
+        width: 480px;
+        overflow: hidden;
+        float: left;
+        background-color: #ECECFB;
+        border: thin solid #333;
+        border-left: none;
+    }
+
+    .search {
+        padding: 5px 0;
+        width: 230px;
+        height: 30px;
+        position: relative;
+        left: 10px;
+        float: left;
+        line-height: 22px;
+    }
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius: 1px;
+    }
+
+    .search:hover input,
+    .search input:focus {
+        width: 200px;
+        margin-left: 0px;
+    }
+
+    .btn {
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        border-radius: 1px;
+    }
+
+    .bar * {
+        display: inline-block;
+    }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body onload="data()">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Snap Ranger</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="search">
+                                    <input type="text" id="search" class="form-control input-sm" maxlength="64" placeholder="Search" />
+                                    <button type="submit" id="searchBtn" class="btn btn-primary btn-sm">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- <div class="container"> 
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh4DBiOnOtGIHdwJTrVdDWupmYjtnWCcY&callback=initMap" async defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--     <form action="">
+        <input type="file" capture="camera" accept="image/*" name="cameraInput">
+        <input type="submit">
+    </form> -->
+<!-- </div> -->
+<div id="show-data"></div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="example.js"></script>
+
+</html>

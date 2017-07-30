@@ -1,0 +1,58 @@
+{
+  "userSays": [
+    {
+      "id": "49649c82-4e52-4555-a4f7-54c369683594",
+      "data": [
+        {
+          "text": "I want a "
+        },
+        {
+          "text": "private",
+          "alias": "PublicPrivate",
+          "meta": "@PublicPrivate",
+          "userDefined": true
+        },
+        {
+          "text": " school."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "0254bbeb-2062-4d54-a308-82912bc5c380",
+  "parentId": "62131a3f-dcb4-42e2-a5cf-8d0484726693",
+  "rootParentId": "d32a9e32-7228-4ce0-89f9-523171676211",
+  "name": "PrivatePublic",
+  "auto": true,
+  "contexts": [
+    "Location-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@PublicPrivate",
+          "name": "PublicPrivate",
+          "value": "$PublicPrivate",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "What do you value most in a school (for example quality of students, academics, facilities, proximity)?"
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ToMoveForSchool</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link href="snapRanger.ico" rel="icon" type="images/faviconJCR.ico" />-->
+  <style>
+      html, body {
+        height: 370px;
+        padding: 0;
+        margin: 0;
+        }
+      #map {
+       height: 400px;
+       
+       overflow: hidden;
+       float: left;
+       border: thin solid #333;
+	   margin: auto;
+    width: 100%;
+    border: 3px solid green;
+    padding: 10px;
+       }
+      #capture {
+       height: 360px;
+       width: 480px;
+       overflow: hidden;
+       float: left;
+       background-color: #ECECFB;
+       border: thin solid #333;
+       border-left: none;
+       }
+	   #search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:1px;
+    }
+
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
+
+.btn {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius:1px;
+}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+		
+		}
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+</style>
+	
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+function enrolment(){
+document.getElementById("mymap").src="images/image_map_01.png"
+}
+
+function openSpaces(){
+document.getElementById("mymap").src="images/image_pin_openspaces.png"
+}
+
+
+function staff(){
+document.getElementById("mymap").src="images/image_pin_staff.png"
+}
+
+
+function childcare(){
+document.getElementById("mymap").src="images/image_map_01.png"
+}
+</script>
+<body>	
+<body>	
+			<table class="table">
+				<tr>
+					<td width="36px">
+						
+							
+										<img src="images/logo_school.png" style="display: inline-block; width:40px; height:40px;">
+										<a class="navbar-brand" href="#">ToMoveForSchool</a>
+										
+					
+					</td>		
+				</tr>	
+			</table>
+				<table class="table" style="width:700px">
+						<thead>
+							
+						</thead>
+					<!--	<tbody>
+							<tr>
+								<td onclick="enrolment()"><img src="images/enrolments.png" class="img-circle" alt="User photo's" width="15px" height="15px" ></td>
+								<td onclick="enrolment()">Enrolment rates</td>
+								<td onclick="staff()"><img src="images/staff.png" class="img-circle" alt="User photo's" width="15px" height="15px"></td>
+								<td onclick="staff()">Staff/student ratio</td>
+								<td onclick="openSpaces()"><img src="images/open.png" class="img-circle" alt="User photo's" width="15px" height="15px"></td>
+								<td onclick="openSpaces()">Open spaces</td>
+								<td onclick="childcare()"><img src="images/childcare.png" class="img-circle" alt="User photo's" width="15px" height="15px"></td>
+								<td onclick="childcare()">Child cares</td>
+							</tr>
+							
+						</tbody>-->
+					</table>		
+			<table class="table">
+				<tr>
+					<td width="50%" height="100%">
+					
+					<img id ="mymap" src="images/image_index_map.png" onclick="enrolment()">
+					<!--	<div class="container"> 
+							<div id="map"></div>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+							<script src="main.js"></script>
+							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh4DBiOnOtGIHdwJTrVdDWupmYjtnWCcY&callback=initMap" async defer></script>
+							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+						<!--	<div id="map" class="container">></div>-->
+  <!--  <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You Are Here.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+		
+		
+      }
+	</script> -->
+						<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgsTQ2tii0jGRIyOvOOETh3b33sCXZAOU&callback=initMap">
+						</script>
+						</div>
+					</td>
+					<td width="50%">			
+						<iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/b72702cd-77c4-42a0-bb4b-b62aa5cbacdc">
+						</iframe>
+					</td>
+				</tr>
+				<tr>
+					<table class="table" style="width:700px">
+						<thead>
+							<tr>
+								<th>Image</th>
+								<th>Legend</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="images/enrolments.png" class="img-circle" alt="User photo's" width="15px" height="15px"></td>
+								<td>Enrolment rates</td>
+								<td>A school catchment area is the geographical location where a state school’s core intake of students must live.</td>
+							</tr>
+							<tr>
+								<td><img src="images/staff.png" class="img-circle" alt="User photo's" width="15px" height="15px"></td>
+								<td>Staff/student ratio</td>
+								<td>Average of primary school students per teaching staff, which includes principals, deputy principals and specialist teachers.</td>
+							</tr>
+							<tr>
+								<td><img src="images/open.png" class="img-circle" alt="User photo's" width="15px" height="15px"></td>
+								<td>Open spaces</td>
+								<td>Providing a well distributed network of walkable attractive and public open spaces and natural areas within the neighbourhood answers a variety of recreational, sporting, play and social needs of the community.</td>
+							</tr>
+							<tr>
+								<td><img src="images/childcare.png" class="img-circle" alt="User photo's" width="15px" height="15px"></td>
+								<td>Child cares</td>
+								<td>Child care centres in your local area. In many cases, you will also be able to find the services' vacancy and fee information.</td>
+							</tr>  
+						</tbody>
+					</table>
+				</tr>				
+			</table>		
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+{
+  "id": "7a06f7cb-223d-4ebd-82f9-4793f7a8e54c",
+  "name": "Important",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "academics",
+      "synonyms": [
+        "academics"
+      ]
+    },
+    {
+      "value": "facilities",
+      "synonyms": [
+        "facilities"
+      ]
+    },
+    {
+      "value": "ESL",
+      "synonyms": [
+        "ESL"
+      ]
+    },
+    {
+      "value": "quality of students",
+      "synonyms": [
+        "quality of students"
+      ]
+    },
+    {
+      "value": "students",
+      "synonyms": [
+        "students"
+      ]
+    },
+    {
+      "value": "student",
+      "synonyms": [
+        "student"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

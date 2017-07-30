@@ -1,0 +1,27 @@
+{
+  "id": "54e222d0-33ec-4b89-b7b6-9ccc34500759",
+  "name": "Class",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "lower",
+      "synonyms": [
+        "lower"
+      ]
+    },
+    {
+      "value": "middle",
+      "synonyms": [
+        "middle"
+      ]
+    },
+    {
+      "value": "high",
+      "synonyms": [
+        "high"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

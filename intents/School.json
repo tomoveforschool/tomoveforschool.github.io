@@ -1,0 +1,63 @@
+{
+  "userSays": [
+    {
+      "id": "540f4aeb-7749-43d3-80ef-278c3f3aadb0",
+      "data": [
+        {
+          "text": "Help me find a "
+        },
+        {
+          "text": "school",
+          "alias": "Start",
+          "meta": "@Start",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "da410d4f-dab7-4c4f-a15f-a1b8349cbf82",
+  "name": "School",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "School-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Start",
+          "name": "Start",
+          "value": "$Start",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Where do you live?"
+        },
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

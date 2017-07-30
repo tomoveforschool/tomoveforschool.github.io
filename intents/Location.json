@@ -1,0 +1,203 @@
+{
+  "userSays": [
+    {
+      "id": "04c616d8-9556-4e34-b9dc-ec096888605d",
+      "data": [
+        {
+          "text": "I live in "
+        },
+        {
+          "text": "Carrara",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "40b6adc6-a8b5-4c8c-b8d0-641418186439",
+      "data": [
+        {
+          "text": "Carrara",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b1abb6f8-3fa3-4a5a-845e-fee5973f4eee",
+      "data": [
+        {
+          "text": "Varsity Lakes",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "de9acf18-3fbe-411a-b1aa-48f4026219b6",
+      "data": [
+        {
+          "text": "Mermaid Waters",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2055bfcf-94a1-4273-9366-6d0545d82499",
+      "data": [
+        {
+          "text": "Robina",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c27f5313-292a-440c-abb9-bb9418ad188c",
+      "data": [
+        {
+          "text": "Southport",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "520e9543-0172-4930-af96-57a638cd080b",
+      "data": [
+        {
+          "text": "I live in "
+        },
+        {
+          "text": "Varsity Lakes",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2c7e0dcb-81ca-4dd9-9981-f2c4c438d333",
+      "data": [
+        {
+          "text": "I live in "
+        },
+        {
+          "text": "Mermaid Waters",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dbbd8f6e-b400-469a-86b6-785453020d96",
+      "data": [
+        {
+          "text": "I live in "
+        },
+        {
+          "text": "Robina",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "198ae23f-f7dd-4667-9849-de2f0623d4b6",
+      "data": [
+        {
+          "text": "I live in "
+        },
+        {
+          "text": "Southport",
+          "alias": "location",
+          "meta": "@sys.location",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "2074db4b-f66e-45e4-9943-4034620a7460",
+  "parentId": "da410d4f-dab7-4c4f-a15f-a1b8349cbf82",
+  "rootParentId": "da410d4f-dab7-4c4f-a15f-a1b8349cbf82",
+  "name": "Location",
+  "auto": true,
+  "contexts": [
+    "School-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "School.School-custom",
+      "affectedContexts": [
+        {
+          "name": "Location-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": false,
+          "dataType": "@sys.location",
+          "name": "location",
+          "value": "$location",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Are you looking for a public or a private school?"
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

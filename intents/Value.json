@@ -1,0 +1,202 @@
+{
+  "userSays": [
+    {
+      "id": "9d3df53d-4855-4a68-ae5e-a0585e0a2e62",
+      "data": [
+        {
+          "text": "student",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": true
+        },
+        {
+          "text": "-to-teacher ratio"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "51617cab-5f4e-4d69-982f-ceb93ed657a3",
+      "data": [
+        {
+          "text": "quality of "
+        },
+        {
+          "text": "students",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "93568ca7-5a08-48b0-98dc-e6240052b662",
+      "data": [
+        {
+          "text": "ESL",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c33d4895-9d45-440b-b88d-176d8cef5c88",
+      "data": [
+        {
+          "text": "facilities",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "55d13df0-2352-4102-a078-64dbdc5511d6",
+      "data": [
+        {
+          "text": "academics",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f3a7534c-b911-408c-a09d-ffb62124678d",
+      "data": [
+        {
+          "text": "I value "
+        },
+        {
+          "text": "student",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": true
+        },
+        {
+          "text": "-to-teacher ratio"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a4e0a6e6-5450-496c-b589-48771daf7be8",
+      "data": [
+        {
+          "text": "I value quality of "
+        },
+        {
+          "text": "students",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "eb942d0e-b0ea-433b-a8e3-728ffeccf6a1",
+      "data": [
+        {
+          "text": "I value "
+        },
+        {
+          "text": "ESL",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "dfab90e6-88a0-4656-afea-72e954f0803f",
+      "data": [
+        {
+          "text": "I value "
+        },
+        {
+          "text": "facilities",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "266bc5d1-1b9d-4205-ae1a-79c73780b0a5",
+      "data": [
+        {
+          "text": "I value "
+        },
+        {
+          "text": "academics",
+          "alias": "Important",
+          "meta": "@Important",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "cb49eb5e-2d37-4834-b342-89529ad19f77",
+  "parentId": "e822da1b-4170-4808-b1b9-c7a567d0c7b4",
+  "rootParentId": "da410d4f-dab7-4c4f-a15f-a1b8349cbf82",
+  "name": "Value",
+  "auto": true,
+  "contexts": [
+    "PublicPrivate-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "School.School-custom.Location-custom.PublicPrivate-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@Important",
+          "name": "Important",
+          "value": "$Important",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "OUTPUT"
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

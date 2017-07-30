@@ -1,0 +1,15 @@
+{
+  "id": "216157e6-e1e4-43d2-bdb1-16746c42a033",
+  "name": "Start",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "school",
+      "synonyms": [
+        "school"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}
